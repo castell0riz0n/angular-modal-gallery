@@ -1,3 +1,10 @@
+# 12.0.0
+
+### Features
+
+- Angular 17 is required **(BREAKING CHANGE)**
+
+
 # 11.1.2
 
 ### Bugfixes
