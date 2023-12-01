@@ -9,10 +9,10 @@
     "build:prod": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run angular-cli:serve-ssr",
-    "serve:ssr": "node dist/angular-cli/server/main.js",
-    "build:ssr": "ng build && ng run angular-cli:server",
-    "prerender": "ng run angular-cli:prerender"
+    "dev:ssr": "ng run universal:serve-ssr",
+    "serve:ssr": "node dist/universal/server/main.js",
+    "build:ssr": "ng build && ng run universal:server",
+    "prerender": "ng run universal:prerender"
   },
   "private": true,
   "dependencies": {

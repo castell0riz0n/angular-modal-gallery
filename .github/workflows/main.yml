@@ -18,19 +18,19 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [ 18.x ]
+        node-version: [ 20.x ]
 
     steps:
       - uses: actions/checkout@v4
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
 
       - name: Switch to a specific npm version
         run: |
-          npm install -g npm@9
+          npm install -g npm@10
           npm cache verify
 
       - name: Installing all deps
@@ -72,17 +72,7 @@ jobs:
           npm run build:dev
           npm run build:prod
           npm run build:ssr
-
-          # try to run prerender script multiple times before failing
-          # n=0
-          # until [ $n -ge 5 ]
-          # do
-          #   echo "npm test with n=$n"
-          #   npm run prerender && break
-          #   n=$[$n+1]
-          #   sleep 3
-          # done
-
+          npm run prerender
           cd ../..
 
       - name: Running tests (with retry on failure)
