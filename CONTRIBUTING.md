@@ -10,7 +10,7 @@ Every time you'll run `npm install` inside an example's folder, you must rebuild
 2. remove all `node_modules` and temp folders with compiled files (if necessary)
 3. `npm install` (from the root of this project)
 4. `npm run clean:all`
-5. `cd examples/angular-cli-17`
+5. `cd examples/angular-cli-18`
 6. `npm install`
 7. `cd ../..`
 8. `cd examples/universal`
@@ -31,8 +31,8 @@ Every time you'll run `npm install` inside an example's folder, you must rebuild
 6. `cd dist/angular-modal-gallery && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
 7. `cd ../..`
 
-# C. Run angular-cli-17 example
-1. `cd examples/angular-cli-17`
+# C. Run angular-cli-18 example
+1. `cd examples/angular-cli-18`
 2. `npm start` => if everything is ok (also in browser's console), kill the process and go to the next step
 3. `npm run build:dev`
 4. `cd dist/angular-cli && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
@@ -55,14 +55,10 @@ Every time you'll run `npm install` inside an example's folder, you must rebuild
 1. `cd examples/universal`
 2. `npm run start` => if everything is ok (also in browser's console), kill the process and go to the next step
 3. `npm run build:dev`
-4. `cd dist/universal/browser && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
-5. `cd ../../..`
-6. `npm run build:prod`
-7. `cd dist/universal/browser && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
-8. `cd ../../..`
-9. `npm run build:ssr && npm run serve:ssr` => if everything is ok (also in browser's console), kill the process and go to the next step
-10. `npm run prerender && npm run serve:ssr` => if everything is ok (also in browser's console), kill the process and go to the next step
-11. `cd ../..`
+4. `npm run serve:ssr` => if everything is ok (also in browser's console), kill the process and go to the next step
+5. `npm run build:prod`
+6. `npm run serve:ssr` => if everything is ok (also in browser's console), kill the process and go to the next step
+7. `cd ../..`
 
 # H. Create your pull request
 1. **If it is ok, create your pull request specifying all the details**

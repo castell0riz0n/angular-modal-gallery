@@ -2,7 +2,7 @@
 
 ### Features
 
-- Angular 17 is required **(BREAKING CHANGE)**
+- Angular 18 is required **(BREAKING CHANGE)**
 
 
 # 11.1.2

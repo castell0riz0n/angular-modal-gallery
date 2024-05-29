@@ -51,7 +51,7 @@ docs/
 **/coverage/
 
 # Examples
-examples/angular-cli-17/dist/
+examples/angular-cli-18/dist/
 examples/angular-cli-material/dist/
 examples/universal/dist/
 examples/universal/out-tsc/
