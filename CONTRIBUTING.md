@@ -25,40 +25,43 @@ Every time you'll run `npm install` inside an example's folder, you must rebuild
 # B. Run main example
 1. `npm start` => if everything is ok (also in browser's console), kill the process and go to the next step
 2. `npm run build:main:dev`
-3. `cd dist/angular-modal-gallery && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
-4. `cd ../..`
+3. `cd dist/angular-modal-gallery/browser && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
+4. `cd ../../..`
 5. `npm run build:main:prod`
-6. `cd dist/angular-modal-gallery && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
-7. `cd ../..`
+6. `cd dist/angular-modal-gallery/browser && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
+7. `cd ../../../../..`
 
 # C. Run angular-cli-18 example
 1. `cd examples/angular-cli-18`
 2. `npm start` => if everything is ok (also in browser's console), kill the process and go to the next step
 3. `npm run build:dev`
-4. `cd dist/angular-cli && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
-5. `cd ../..`
+4. `cd dist/angular-cli/browser && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
+5. `cd ../../..`
 6. `npm run build:prod`
-7. `cd dist/angular-cli && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
-8. `cd ../..`
+7. `cd dist/angular-cli/browser && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
+8. `cd ../../../../..`
 
 # D. Run angular-cli-material example
 1. `cd examples/angular-cli-material`
 2. `npm start` => if everything is ok (also in browser's console), kill the process and go to the next step
 3. `npm run build:dev`
-4. `cd dist/angular-cli && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
-5. `cd ../..`
+4. `cd dist/angular-cli/browser && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
+5. `cd ../../..`
 6. `npm run build:prod`
-7. `cd dist/angular-cli && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
-8. `cd ../../../..`
+7. `cd dist/angular-cli/browser && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
+8. `cd ../../../../..`
 
 # E. Run universal example
 1. `cd examples/universal`
 2. `npm run start` => if everything is ok (also in browser's console), kill the process and go to the next step
 3. `npm run build:dev`
-4. `npm run serve:ssr` => if everything is ok (also in browser's console), kill the process and go to the next step
-5. `npm run build:prod`
-6. `npm run serve:ssr` => if everything is ok (also in browser's console), kill the process and go to the next step
-7. `cd ../..`
+4. `cd dist/universal/browser && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
+5. `cd ../../..`
+6. `npm run build:prod`
+7. `cd dist/universal/browser && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
+8. `cd ../../..`
+9. `npm run serve:ssr` => if everything is ok (also in browser's console), kill the process and go to the next step
+10. `cd ../..`
 
 # H. Create your pull request
 1. **If it is ok, create your pull request specifying all the details**
