@@ -1,3 +1,10 @@
+# 13.0.0
+
+### Features
+
+- Angular 19 is required **(BREAKING CHANGE)**
+
+
 # 12.0.0
 
 ### Features
