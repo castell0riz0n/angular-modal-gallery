@@ -4,7 +4,7 @@ on:
   push:
     paths-ignore:
       - 'node_modules'
-      - 'examples/angular-cli-19/node_modules'
+      - '../../examples/angular-cli-18/node_modules'
       - 'examples/angular-cli-material/node_modules'
       - 'examples/universal/node_modules'
 
