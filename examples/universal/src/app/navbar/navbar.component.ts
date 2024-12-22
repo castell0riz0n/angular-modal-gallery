@@ -27,9 +27,10 @@ import { Router } from '@angular/router';
 import { BreakpointObserver } from '@angular/cdk/layout';
 
 @Component({
-  selector: 'ks-navbar',
-  templateUrl: 'navbar.html',
-  styleUrls: ['navbar.scss']
+    selector: 'ks-navbar',
+    templateUrl: 'navbar.html',
+    styleUrls: ['navbar.scss'],
+    standalone: false
 })
 export class NavbarComponent {
   navbarHeight = '56px';

@@ -37,9 +37,10 @@ import {
 } from '@ks89/angular-modal-gallery';
 
 @Component({
-  selector: 'ks-plain-gallery-page',
-  templateUrl: './plain-gallery.html',
-  styleUrls: ['./plain-gallery.scss']
+    selector: 'ks-plain-gallery-page',
+    templateUrl: './plain-gallery.html',
+    styleUrls: ['./plain-gallery.scss'],
+    standalone: false
 })
 export class PlainGalleryExampleComponent {
   plainGalleryRow: PlainGalleryConfig = {
