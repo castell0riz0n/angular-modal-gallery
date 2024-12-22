@@ -28,8 +28,8 @@ import { ClickOutsideDirective } from './click-outside.directive';
 import { By } from '@angular/platform-browser';
 
 @Component({
-  selector: 'ks-test-click-outside',
-  template: `
+    selector: 'ks-test-click-outside',
+    template: `
     <div id="modal-gallery-wrapper"
          ksClickOutside [clickOutsideEnable]="true"
          (clickOutside)="onClickOutside($event)">
@@ -46,7 +46,8 @@ import { By } from '@angular/platform-browser';
         </div>
       </div>
     </div>
-  `
+  `,
+    standalone: false
 })
 class TestClickOutsideComponent {
   @Output() clicked: EventEmitter<boolean> = new EventEmitter<boolean>();

@@ -4,26 +4,24 @@
   "compilerOptions": {
     "paths": {
       "@ks89/angular-modal-gallery": [
-        "dist/ks89/angular-modal-gallery"
+        "./dist/ks89/angular-modal-gallery"
       ]
     },
-    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": false,  // FIXME should become false
+    "noPropertyAccessFromIndexSignature": false,  // FIXME should become tre
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "sourceMap": true,
-    "declaration": false,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
     "experimentalDecorators": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
-    "useDefineForClassFields": false,
+    "useDefineForClassFields": false, // to inject sanitizer without errors
     "lib": [
       "ES2022",
       "dom"

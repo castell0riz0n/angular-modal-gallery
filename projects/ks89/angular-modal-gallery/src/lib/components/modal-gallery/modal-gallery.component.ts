@@ -28,10 +28,11 @@ import { LibConfig } from '../../model/lib-config.interface';
 import { ModalGalleryConfig } from '../../model/modal-gallery-config.interface';
 
 @Component({
-  selector: 'ks-modal-gallery',
-  templateUrl: './modal-gallery.component.html',
-  styleUrls: ['./modal-gallery.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'ks-modal-gallery',
+    templateUrl: './modal-gallery.component.html',
+    styleUrls: ['./modal-gallery.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class ModalGalleryComponent implements OnInit, OnDestroy {
   /**

@@ -59,8 +59,8 @@ const expected: Description[] | undefined[] = [
 ];
 
 @Component({
-  selector: 'ks-test-description',
-  template: `
+    selector: 'ks-test-description',
+    template: `
     <figure>
       <figcaption ksDescription [description]="descriptions[0]"></figcaption>
     </figure>
@@ -85,7 +85,8 @@ const expected: Description[] | undefined[] = [
     <figure>
       <figcaption ksDescription [description]="descriptions[7]"></figcaption>
     </figure>
-  `
+  `,
+    standalone: false
 })
 class TestDescriptionComponent {
   descriptions: Description[] | undefined[] = [

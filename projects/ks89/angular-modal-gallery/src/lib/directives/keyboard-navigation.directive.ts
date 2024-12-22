@@ -28,7 +28,8 @@ import { Directive, EventEmitter, HostListener, Input, Output } from '@angular/c
  * Directive to manage keyboard navigation.
  */
 @Directive({
-  selector: '[ksKeyboardNavigation]'
+    selector: '[ksKeyboardNavigation]',
+    standalone: false
 })
 export class KeyboardNavigationDirective {
   /**

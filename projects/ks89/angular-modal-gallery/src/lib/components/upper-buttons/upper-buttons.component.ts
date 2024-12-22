@@ -54,10 +54,11 @@ export interface InternalButtonConfig extends ButtonConfig {
  * Also it emits click events as outputs.
  */
 @Component({
-  selector: 'ks-upper-buttons',
-  styleUrls: ['upper-buttons.scss'],
-  templateUrl: 'upper-buttons.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'ks-upper-buttons',
+    styleUrls: ['upper-buttons.scss'],
+    templateUrl: 'upper-buttons.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class UpperButtonsComponent extends AccessibleComponent implements OnInit {
   /**

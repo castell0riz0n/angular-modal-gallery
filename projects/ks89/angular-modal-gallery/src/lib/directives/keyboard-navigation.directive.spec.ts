@@ -29,10 +29,11 @@ import { By } from '@angular/platform-browser';
 import { KeyboardNavigationDirective } from './keyboard-navigation.directive';
 
 @Component({
-  selector: 'ks-test-keyboard-navigation',
-  template: `
+    selector: 'ks-test-keyboard-navigation',
+    template: `
     <main ksKeyboardNavigation [isOpen]="true" (keyboardNavigation)="onKeyPress($event)"></main>
-  `
+  `,
+    standalone: false
 })
 class TestKeyboardNavigationComponent {
   @Output() keyPress: EventEmitter<string> = new EventEmitter<string>();

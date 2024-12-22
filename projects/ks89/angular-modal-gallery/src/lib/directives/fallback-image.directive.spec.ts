@@ -28,14 +28,15 @@ import { By, SafeResourceUrl } from '@angular/platform-browser';
 import { FallbackImageDirective } from './fallback-image.directive';
 
 @Component({
-  selector: 'ks-test-fallback-image',
-  template: `
+    selector: 'ks-test-fallback-image',
+    template: `
     <img src="wrong-img-path.jpg" ksFallbackImage [fallbackImg]="imgPath" (fallbackApplied)="onError(true)">
     <img src="wrong-img-path.jpg" ksFallbackImage [fallbackImg]="base64" (fallbackApplied)="onError(true)">
     <img src="wrong-img-path.jpg" ksFallbackImage [fallbackImg]="''" (fallbackApplied)="onError(true)">
     <img src="wrong-img-path.jpg" ksFallbackImage [fallbackImg]="base64" (fallbackApplied)="onError(true)">
     <img src="wrong-img-path.jpg" ksFallbackImage [fallbackImg]="''" (fallbackApplied)="onError(true)">
-  `
+  `,
+    standalone: false
 })
 class TestFallbackImageComponent {
   base64: SafeResourceUrl = 'data:image/png;base64,iVBORw0KG=';
@@ -50,14 +51,15 @@ class TestFallbackImageComponent {
 }
 
 @Component({
-  selector: 'ks-test-fallback-image-wrong',
-  template: `
+    selector: 'ks-test-fallback-image-wrong',
+    template: `
     <img src="wrong-img-path.jpg" ksFallbackImage [fallbackImg]="null" (fallbackApplied)="onError(false)">
     <img src="wrong-img-path.jpg" ksFallbackImage [fallbackImg]="undefined" (fallbackApplied)="onError(false)">
     <img src="wrong-img-path.jpg" ksFallbackImage [fallbackImg]="undefined" (fallbackApplied)="onError(false)">
     <img src="wrong-img-path.jpg" ksFallbackImage [fallbackImg]="null" (fallbackApplied)="onError(false)">
     <img src="wrong-img-path.jpg" ksFallbackImage [fallbackImg]="undefined" (fallbackApplied)="onError(false)">
-  `
+  `,
+    standalone: false
 })
 class WrongTestFallbackImageComponent {
   @Output()

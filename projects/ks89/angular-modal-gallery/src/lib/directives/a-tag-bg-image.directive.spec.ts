@@ -82,8 +82,8 @@ const length: number = expectedModal.length + expectedPlain.length + expectedWro
   expectedPlainWithFallback.length;
 
 @Component({
-  selector: 'ks-test-atagbgimage',
-  template: `
+    selector: 'ks-test-atagbgimage',
+    template: `
     <div ksATagBgImage [image]="images[0]" [style]="'50% 50% / cover'"></div>
     <div ksATagBgImage [image]="images[0]" [style]="''"></div>
     <div ksATagBgImage [image]="images[1]" [style]="'50% 50% / cover'"></div>
@@ -102,7 +102,8 @@ const length: number = expectedModal.length + expectedPlain.length + expectedWro
 
     <!-- tests with fallback image -->
     <div ksATagBgImage [image]="expectedPlainWithFallback[0]" [style]="''"></div>
-  `
+  `,
+    standalone: false
 })
 class TestATagBgImageComponent {
   base64: SafeResourceUrl = 'data:image/png;base64,iVBORw0KG=';

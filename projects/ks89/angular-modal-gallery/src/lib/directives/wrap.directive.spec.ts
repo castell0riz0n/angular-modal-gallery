@@ -33,12 +33,13 @@ interface TestModel {
 }
 
 @Component({
-  selector: 'ks-test-wrap',
-  template: `
+    selector: 'ks-test-wrap',
+    template: `
     <div ksWrap [wrap]="true" [width]="'100px'"></div>
     <div ksWrap [wrap]="false" [width]="'100px'"></div>
     <div ksWrap [wrap]="undefined" [width]="'100px'"></div>
-  `
+  `,
+    standalone: false
 })
 class TestWrapComponent {}
 

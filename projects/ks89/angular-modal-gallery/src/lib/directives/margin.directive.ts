@@ -28,7 +28,8 @@ import { Directive, ElementRef, Input, OnChanges, OnInit, Renderer2 } from '@ang
  * Directive to change margins of an element.
  */
 @Directive({
-  selector: '[ksMargin]'
+    selector: '[ksMargin]',
+    standalone: false
 })
 export class MarginDirective implements OnInit, OnChanges {
   /**

@@ -43,10 +43,11 @@ import { PlainLibConfig, LibConfig } from '../../model/lib-config.interface';
  * Also, it emits click events as outputs.
  */
 @Component({
-  selector: 'ks-plain-gallery',
-  styleUrls: ['plain-gallery.scss'],
-  templateUrl: 'plain-gallery.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'ks-plain-gallery',
+    styleUrls: ['plain-gallery.scss'],
+    templateUrl: 'plain-gallery.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class PlainGalleryComponent extends AccessibleComponent implements OnInit, OnChanges {
   /**

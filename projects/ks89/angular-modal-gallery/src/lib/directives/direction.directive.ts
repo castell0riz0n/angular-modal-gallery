@@ -28,7 +28,8 @@ import { Directive, ElementRef, Input, OnChanges, OnInit, Renderer2 } from '@ang
  * Directive to change the flex-direction of an element, based on two inputs (`direction` and `justify`).
  */
 @Directive({
-  selector: '[ksDirection]'
+    selector: '[ksDirection]',
+    standalone: false
 })
 export class DirectionDirective implements OnInit, OnChanges {
   /**

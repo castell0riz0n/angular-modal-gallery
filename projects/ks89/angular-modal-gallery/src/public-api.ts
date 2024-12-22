@@ -30,31 +30,35 @@
 export { GalleryModule } from './lib/modal-gallery.module';
 
 export { Action } from './lib/model/action.enum';
-export { Image, PlainImage, ModalImage, ImageEvent, ImageModalEvent } from './lib/model/image.class';
-export { Description, DescriptionStrategy } from './lib/model/description.interface';
-export { KeyboardConfig } from './lib/model/keyboard-config.interface';
-export { DotsConfig } from './lib/model/dots-config.interface';
-export { PreviewConfig } from './lib/model/preview-config.interface';
-export { AccessibilityConfig } from './lib/model/accessibility.interface';
+export { Image, ImageEvent, ImageModalEvent } from './lib/model/image.class';
+export type { PlainImage, ModalImage } from './lib/model/image.class';
+export { DescriptionStrategy } from './lib/model/description.interface';
+export type { Description } from './lib/model/description.interface';
+export type { KeyboardConfig } from './lib/model/keyboard-config.interface';
+export type { DotsConfig } from './lib/model/dots-config.interface';
+export type { PreviewConfig } from './lib/model/preview-config.interface';
+export type { AccessibilityConfig } from './lib/model/accessibility.interface';
 
-export { BreakpointsConfig, CarouselPreviewConfig } from './lib/model/carousel-preview-config.interface';
-export { CarouselConfig } from './lib/model/carousel-config.interface';
-export { PlayConfig } from './lib/model/play-config.interface';
-export { CarouselImageConfig } from './lib/model/carousel-image-config.interface';
+export type { BreakpointsConfig, CarouselPreviewConfig } from './lib/model/carousel-preview-config.interface';
+export type { CarouselConfig } from './lib/model/carousel-config.interface';
+export type { PlayConfig } from './lib/model/play-config.interface';
+export type { CarouselImageConfig } from './lib/model/carousel-image-config.interface';
 
-export { Size } from './lib/model/size.interface';
+export type { Size } from './lib/model/size.interface';
 
-export { ButtonsConfig, ButtonsStrategy, ButtonType, ButtonEvent } from './lib/model/buttons-config.interface';
+export { ButtonsStrategy, ButtonType } from './lib/model/buttons-config.interface';
+export type { ButtonsConfig, ButtonEvent } from './lib/model/buttons-config.interface';
 
-export { ModalLibConfig, PlainLibConfig, CarouselLibConfig } from './lib/model/lib-config.interface';
+export type { ModalLibConfig, PlainLibConfig, CarouselLibConfig } from './lib/model/lib-config.interface';
 
-export { ModalGalleryConfig } from './lib/model/modal-gallery-config.interface';
+export type { ModalGalleryConfig } from './lib/model/modal-gallery-config.interface';
 
-export { CurrentImageConfig } from './lib/model/current-image-config.interface';
+export type { CurrentImageConfig } from './lib/model/current-image-config.interface';
 
-export { LoadingConfig, LoadingType } from './lib/model/loading-config.interface';
+export { LoadingType } from './lib/model/loading-config.interface';
+export type { LoadingConfig } from './lib/model/loading-config.interface';
 
-export { InteractionEvent } from './lib/model/interaction-event.interface';
+export type { InteractionEvent } from './lib/model/interaction-event.interface';
 
 export { KS_DEFAULT_ACCESSIBILITY_CONFIG } from './lib/components/accessibility-default';
 export {
@@ -67,12 +71,13 @@ export {
 } from './lib/components/upper-buttons/upper-buttons-default';
 
 export {
-  PlainGalleryConfig,
-  PlainGalleryLayout,
   LineLayout,
   GridLayout,
-  PlainGalleryStrategy,
-  BreakConfig
+  PlainGalleryStrategy
+} from './lib/model/plain-gallery-config.interface';
+export type {
+    PlainGalleryConfig,
+    PlainGalleryLayout, BreakConfig
 } from './lib/model/plain-gallery-config.interface';
 
 export { ModalGalleryComponent } from './lib/components/modal-gallery/modal-gallery.component';

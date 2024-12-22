@@ -25,8 +25,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ks-intro-header',
-  templateUrl: 'intro-header.html',
-  styleUrls: ['intro-header.scss']
+    selector: 'ks-intro-header',
+    templateUrl: 'intro-header.html',
+    styleUrls: ['intro-header.scss'],
+    standalone: false
 })
 export class IntroHeaderComponent {}

@@ -241,11 +241,12 @@ function checkPreviewStateAfterClick(previews: DebugElement[], prevValue: Intern
  * A template-providing component to test the template-driven previews customization.
  */
  @Component({
-  template: `
+    template: `
     <ng-template #template let-preview="preview" let-defaultTemplate="defaultTemplate">
       <div class="my-own-template">example</div>
     </ng-template>
 `,
+    standalone: false
 })
 class PreviewsTemplateComponent0 {
   @ViewChild('template') templateRef?: TemplateRef<HTMLElement>;
@@ -255,13 +256,14 @@ class PreviewsTemplateComponent0 {
  * A template-providing component to test the template-driven previews customization (using default template).
  */
 @Component({
-  template: `
+    template: `
     <ng-template #template let-preview="preview" let-defaultTemplate="defaultTemplate">
       <div>
         <ng-container *ngTemplateOutlet="defaultTemplate"></ng-container>
       </div>
     </ng-template>
 `,
+    standalone: false
 })
 class PreviewsTemplateComponent1 {
   @ViewChild('template') templateRef?: TemplateRef<HTMLElement>;

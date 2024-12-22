@@ -31,7 +31,8 @@ import { Directive, EventEmitter, HostListener, Input, Output } from '@angular/c
  * Directive to manage swipe events on touch devices.
  */
 @Directive({
-  selector: '[ksSwipe]'
+    selector: '[ksSwipe]',
+    standalone: false
 })
 export class SwipeDirective {
   defaultTouch = { x: 0, y: 0, time: 0 };

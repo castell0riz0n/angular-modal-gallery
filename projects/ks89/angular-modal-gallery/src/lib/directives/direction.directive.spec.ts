@@ -47,8 +47,8 @@ const expected: TestModel[] = [
 ];
 
 @Component({
-  selector: 'ks-test-direction',
-  template: `
+    selector: 'ks-test-direction',
+    template: `
     <div ksDirection [direction]="'row'" [justify]="'flex-start'"></div>
     <div ksDirection [direction]="'row-reverse'" [justify]="'flex-end'"></div>
     <div ksDirection [direction]="'column'" [justify]="'center'"></div>
@@ -58,7 +58,8 @@ const expected: TestModel[] = [
     <div ksDirection [direction]="''" [justify]="''"></div>
     <div ksDirection [direction]="''" [justify]="'center'"></div>
     <div ksDirection [direction]="'row'" [justify]="''"></div>
-  `
+  `,
+    standalone: false
 })
 class TestDirectionComponent {}
 

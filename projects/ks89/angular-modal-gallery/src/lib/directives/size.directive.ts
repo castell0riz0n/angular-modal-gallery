@@ -29,7 +29,8 @@ import { Size } from '../model/size.interface';
  * Directive to change the size of an element.
  */
 @Directive({
-  selector: '[ksSize]'
+    selector: '[ksSize]',
+    standalone: false
 })
 export class SizeDirective implements OnInit, OnChanges {
   /**

@@ -40,8 +40,8 @@ const expected: Size[] = [
 ];
 
 @Component({
-  selector: 'ks-test-size',
-  template: `
+    selector: 'ks-test-size',
+    template: `
     <div ksSize [sizeConfig]="{width: '100px', height: '80px'}"></div>
     <div ksSize [sizeConfig]="{width: '50px', height: '20px'}"></div>
     <div ksSize [sizeConfig]="{width: '50%', height: '100%'}"></div>
@@ -50,7 +50,8 @@ const expected: Size[] = [
     <div ksSize [sizeConfig]="{width: '50px', height: 'auto'}"></div>
     <div ksSize [sizeConfig]="{width: '', height: ''}"></div>
     <div ksSize [sizeConfig]="null"></div>
-  `
+  `,
+    standalone: false
 })
 class TestSizeComponent {}
 

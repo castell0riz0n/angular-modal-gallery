@@ -43,10 +43,11 @@ import { LibConfig } from '../../model/lib-config.interface';
  * Component with image previews
  */
 @Component({
-  selector: 'ks-previews',
-  styleUrls: ['previews.scss', '../previews-arrows.scss'],
-  templateUrl: 'previews.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'ks-previews',
+    styleUrls: ['previews.scss', '../previews-arrows.scss'],
+    templateUrl: 'previews.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class PreviewsComponent extends AccessibleComponent implements OnInit, OnChanges {
   /**

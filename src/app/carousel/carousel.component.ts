@@ -36,9 +36,10 @@ import {
 } from '@ks89/angular-modal-gallery';
 
 @Component({
-  selector: 'ks-carousel-page',
-  templateUrl: './carousel.html',
-  styleUrls: ['./carousel.scss']
+    selector: 'ks-carousel-page',
+    templateUrl: './carousel.html',
+    styleUrls: ['./carousel.scss'],
+    standalone: false
 })
 export class CarouselExampleComponent {
   imageIndex = 1;

@@ -30,7 +30,8 @@ import { Directive, EventEmitter, HostListener, Input, Output } from '@angular/c
  * an event using `@Output clickOutside`.
  */
 @Directive({
-  selector: '[ksClickOutside]'
+    selector: '[ksClickOutside]',
+    standalone: false
 })
 export class ClickOutsideDirective {
   /**

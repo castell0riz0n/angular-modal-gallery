@@ -40,10 +40,11 @@ import { LibConfig } from '../../model/lib-config.interface';
  * Component with clickable dots (small circles) to navigate between images inside the modal gallery.
  */
 @Component({
-  selector: 'ks-dots',
-  styleUrls: ['dots.scss'],
-  templateUrl: 'dots.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'ks-dots',
+    styleUrls: ['dots.scss'],
+    templateUrl: 'dots.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class DotsComponent extends AccessibleComponent implements OnInit, OnChanges {
   /**

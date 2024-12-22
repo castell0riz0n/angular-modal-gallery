@@ -74,10 +74,11 @@ export interface ImageLoadEvent {
  * Component with the current image with some additional elements like arrows and side previews.
  */
 @Component({
-  selector: 'ks-current-image',
-  styleUrls: ['current-image.scss', '../image-arrows.scss', 'current-image-previews.scss'],
-  templateUrl: 'current-image.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'ks-current-image',
+    styleUrls: ['current-image.scss', '../image-arrows.scss', 'current-image-previews.scss'],
+    templateUrl: 'current-image.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class CurrentImageComponent extends AccessibleComponent implements OnInit, OnChanges, AfterContentInit, OnDestroy {
   /**

@@ -69,11 +69,12 @@ import { InternalLibImage } from '../../model/image-internal.class';
  * Component with configurable inline/plain carousel.
  */
 @Component({
-  selector: 'ks-carousel',
-  styleUrls: ['carousel.scss', '../image-arrows.scss'],
-  templateUrl: 'carousel.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [ConfigService]
+    selector: 'ks-carousel',
+    styleUrls: ['carousel.scss', '../image-arrows.scss'],
+    templateUrl: 'carousel.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [ConfigService],
+    standalone: false
 })
 export class CarouselComponent extends AccessibleComponent implements OnInit, AfterContentInit, OnDestroy, OnChanges {
   /**

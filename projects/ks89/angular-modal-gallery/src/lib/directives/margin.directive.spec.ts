@@ -51,8 +51,8 @@ const expected: Margin[] = [
 ];
 
 @Component({
-  selector: 'ks-test-margin',
-  template: `
+    selector: 'ks-test-margin',
+    template: `
       <div ksMargin [marginLeft]="'2px'" [marginRight]="'2px'"></div>
       <div ksMargin [marginLeft]="'4px'" [marginRight]="'0px'"></div>
       <div ksMargin [marginLeft]="'4px'" [marginRight]="'0'"></div>
@@ -65,7 +65,8 @@ const expected: Margin[] = [
       <div ksMargin [marginLeft]="'2px'" [marginRight]="'2px'" [marginTop]="'0px'" [marginBottom]="'2px'"></div>
       <div ksMargin [marginLeft]="undefined" [marginRight]="null" [marginTop]="undefined" [marginBottom]="null"></div>
       <div ksMargin></div>
-    `
+    `,
+    standalone: false
 })
 class TestMarginComponent {}
 

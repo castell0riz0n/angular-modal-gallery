@@ -32,9 +32,10 @@ import { DIRECTION_RIGHT, MOUSE_MAIN_BUTTON_CLICK, NEXT, NOTHING, PREV, ENTER_CO
  * and another with also the direction (right or left).
  */
 @Component({
-  selector: 'ks-accessible',
-  template: ``,
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'ks-accessible',
+    template: ``,
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class AccessibleComponent {
   constructor() {}

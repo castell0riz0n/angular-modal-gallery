@@ -29,7 +29,8 @@ import { Description } from '../model/description.interface';
  * Directive to customize the description.
  */
 @Directive({
-  selector: '[ksDescription]'
+    selector: '[ksDescription]',
+    standalone: false
 })
 export class DescriptionDirective implements OnInit, OnChanges {
   /**
