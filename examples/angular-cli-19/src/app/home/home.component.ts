@@ -25,8 +25,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ks-home-page',
-  templateUrl: './home.html',
-  styleUrls: ['./home.scss']
+    selector: 'ks-home-page',
+    templateUrl: './home.html',
+    styleUrls: ['./home.scss'],
+    standalone: false
 })
 export class HomeComponent {}

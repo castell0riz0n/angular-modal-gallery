@@ -31,9 +31,10 @@ export interface DialogData {
 }
 
 @Component({
-  selector: 'ks-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss']
+    selector: 'ks-root',
+    templateUrl: 'app.component.html',
+    styleUrls: ['app.component.scss'],
+    standalone: false
 })
 export class AppComponent {
   // ----------------------------------------------------
@@ -66,8 +67,9 @@ export class AppComponent {
 // ----------------------------------------------------
 // ----------------------------------------------------
 @Component({
-  selector: 'dialog-overview-example-dialog',
-  templateUrl: 'dialog-overview-example-dialog.html'
+    selector: 'dialog-overview-example-dialog',
+    templateUrl: 'dialog-overview-example-dialog.html',
+    standalone: false
 })
 export class DialogOverviewExampleDialog {
   constructor(public dialogRef: MatDialogRef<DialogOverviewExampleDialog>, @Inject(MAT_DIALOG_DATA) public data: DialogData) {}

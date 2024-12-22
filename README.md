@@ -171,7 +171,8 @@ From version @ks89/angular-modal-gallery >= 11.0.0, **mousetrap and hammerjs hav
 | Angular 15 |          = 10.0.1           | optional     |
 | Angular 16 |          = 11.1.1           | optional     |
 | Angular 17 |          = 11.1.1           | optional     |
-| Angular 18 |        &gt;= 12.0.0         | optional     |
+| Angular 18 |          = 12.0.0           | optional     |
+| Angular 19 |        &gt;= 13.0.0         | optional     |
 
 <br>
 

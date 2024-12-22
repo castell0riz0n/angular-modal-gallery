@@ -43,9 +43,10 @@ import { Subscription } from 'rxjs';
 import * as libConfigs from './libconfigs';
 
 @Component({
-  selector: 'ks-modal-gallery-page',
-  templateUrl: './modal-gallery.html',
-  styleUrls: ['./modal-gallery.scss']
+    selector: 'ks-modal-gallery-page',
+    templateUrl: './modal-gallery.html',
+    styleUrls: ['./modal-gallery.scss'],
+    standalone: false
 })
 export class ModalGalleryExampleComponent implements OnDestroy {
   /**
